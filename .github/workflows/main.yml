@@ -19,4 +19,7 @@ jobs:
           java-version: '17'
 
       - name: Compile
-        run: javac src/main.java src/task.java src/TaskManager.java
+        run: javac src/*.java
+
+      - name: Run
+        run: java -cp src Main
